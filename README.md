@@ -29,80 +29,77 @@ Building scalable, production-ready backend systems with clean architecture.
 </p>
 
 
-
 # 💫 About Me
 
 <img align="right" alt="Coding" width="320" src="https://media.tenor.com/rePDfDWO3XoAAAAd/hacking.gif">
 
-```typescript
-class BackendEngineer {
+Hi there! 👋 I'm **Partha Sarker**, a passionate **Backend Engineer** from **Bangladesh** who enjoys designing scalable, secure, and maintainable backend systems.
 
-    name = "Partha Sarker";
+I specialize in building production-ready applications with modern technologies, focusing on clean architecture, performance, and developer experience. Whether it's authentication, APIs, queue processing, or system design, I enjoy solving real-world backend challenges.
 
-    role = "Backend Engineer";
+### 🚀 What I'm Working On
 
-    location = "🇧🇩 Bangladesh";
+- ⚡ Building scalable backend applications with **NestJS** & **TypeScript**
+- 🔐 Developing secure Authentication & Authorization systems
+- 🏦 Designing Wallet & Reward Platform architectures
+- 📦 Background job processing with **BullMQ** & **Redis**
+- 🐳 Containerizing applications using **Docker**
+- 🗄️ Working with **PostgreSQL** & **Prisma ORM**
 
-    language = [
-        "TypeScript",
-        "JavaScript"
-    ];
+### 🌱 Currently Learning
 
-    backend = [
-        "NestJS",
-        "Node.js",
-        "Express"
-    ];
+- 🧠 System Design
+- ☁️ Microservices Architecture
+- 📨 Event-Driven Systems
+- ⚡ Kafka
+- ☸️ Kubernetes
 
-    database = [
-        "PostgreSQL",
-        "Prisma",
-        "Redis"
-    ];
+### 🎯 My Goal
 
-    tools = [
-        "Docker",
-        "Git",
-        "Linux",
-        "Postman"
-    ];
+To build reliable backend systems and SaaS products that can scale to millions of users while continuously improving my engineering skills.
 
-    currentlyLearning = [
-        "System Design",
-        "Microservices",
-        "Kafka",
-        "Kubernetes"
-    ];
 
-    motto() {
-        return "Build Clean • Scale Fast • Keep Learning 🚀";
-    }
 
-}
-```
+## 🛠 Tech Stack
 
-<br>
+### 💻 Programming Languages
 
-- 🚀 Backend Engineer passionate about scalable applications
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=ts,js" />
+</p>
 
-- ⚡ Building REST APIs & Backend Systems
+### ⚙️ Backend Development
 
-- 🔥 Love Clean Architecture & SOLID Principles
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=nodejs,nestjs,express" />
+</p>
 
-- 🧠 Learning System Design every day
+### 🗄️ Database & ORM
 
-- 💬 Ask me about **NestJS, TypeScript, PostgreSQL, Prisma, Docker**
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=postgres,prisma,mongodb" />
+</p>
 
-- 🌱 Currently exploring **Kafka, Kubernetes & Microservices**
+### ⚡ Cache & Message Queue
 
-- 🎯 Goal: Build products used by millions.
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=redis" />
+</p>
 
-# 🛠 Tech Stack
+<p align="left">
+  <img src="https://img.shields.io/badge/BullMQ-FF6A00?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+</p>
 
-<p align="center">
+### ☁️ DevOps & Tools
 
-<img src="https://skillicons.dev/icons?i=ts,js,nodejs,nestjs,express,postgres,prisma,redis,docker,linux,git,github,vscode,postman&perline=7"/>
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=docker,linux,git,github,postman,vscode" />
+</p>
 
+### 📚 Currently Learning
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=kafka,kubernetes,aws" />
 </p>
 
 
