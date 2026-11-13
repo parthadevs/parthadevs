@@ -1,250 +1,81 @@
-<h1 align="center">Hi 👋, I'm Partha Sarker</h1>
+# Partha Sarker
 
-<h3 align="center">
-Backend Engineer • NestJS Developer • TypeScript Enthusiast
-</h3>
+**Software Engineer** · Backend and full stack · Dhaka, Bangladesh
 
-<p align="center">
-Building scalable, production-ready backend systems with clean architecture.
-</p>
+I build backend systems and web applications that handle real users and real money. My main tools are TypeScript, NestJS, PostgreSQL, and Redis, and I build frontends with Next.js. I care most about correctness, data consistency and maintainable code.
 
-<p align="center">
-<a href="https://github.com/parthadevs">
-<img src="https://komarev.com/ghpvc/?username=parthadevs&label=Profile%20Views&color=0891b2&style=for-the-badge"/>
-</a>
+[Portfolio](https://parthadevs.github.io/personal-website/) · [LinkedIn](https://www.linkedin.com/in/parthadevs/) · [Email](mailto:dev.parthasarker@gmail.com)
 
-<a href="https://github.com/parthadevs?tab=followers">
-<img src="https://img.shields.io/github/followers/parthadevs?logo=github&style=for-the-badge"/>
-</a>
+---
 
-<a href="https://github.com/parthadevs">
-<img src="https://img.shields.io/github/stars/parthadevs?affiliations=OWNER&style=for-the-badge"/>
-</a>
-</p>
+## Experience
 
-<p align="center">
+**Full Stack Engineer, Dolphin IT Institute** (remote) · August 2024 to present
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&duration=3500&pause=1000&color=00BFFF&center=true&vCenter=true&width=650&lines=Backend+Engineer;NestJS+Developer;TypeScript+Enthusiast;Building+Scalable+Backend+Systems;Always+Learning+New+Technologies"/>
+Backend development with NestJS, TypeScript, and PostgreSQL, and frontend development with Next.js and Tailwind CSS, on web application projects.
 
-</p>
+## Production Platforms
 
+I have built the backend and frontend for reward and survey platforms, where users complete offers and tasks and earn money.
 
-# 💫 About Me
+| Platform | Period | Scale |
+| --- | --- | --- |
+| [DollarPull](https://dollarpull.com/) | Apr to Jun 2026 | 17K+ users |
+| [Cash2Wall](https://cash2wall.com/) | Feb to Mar 2026 | 5K+ daily survey completions |
+| [EarnAppz](https://earnappz.com/) | Oct to Dec 2025 | 20K+ users |
+| [Pollmake](https://pollmake.com) | 2026 | Offers, surveys, offer walls, referrals, leaderboard, cash out |
 
-<img align="right" alt="Coding" width="320" src="https://media.tenor.com/rePDfDWO3XoAAAAd/hacking.gif">
+What I focused on in this work:
 
-Hi there! 👋 I'm **Partha Sarker**, a passionate **Backend Engineer** from **Bangladesh** who enjoys designing scalable, secure, and maintainable backend systems.
+- **Partner callbacks.** Offerwall and survey partners notify the platform when a user completes a task. These callbacks are verified with HMAC signatures before any reward is applied.
+- **Wallet safety.** Transactions are idempotent, so a repeated or retried callback cannot credit a user twice.
+- **Performance.** Redis caching reduced core API response times by about 40%.
+- **Background work.** Reward processing and other slow jobs run in queues rather than inside the request.
 
-I specialize in building production-ready applications with modern technologies, focusing on clean architecture, performance, and developer experience. Whether it's authentication, APIs, queue processing, or system design, I enjoy solving real-world backend challenges.
+## Projects
 
-### 🚀 What I'm Working On
+### [Event-Driven Order System](https://github.com/parthadevs/event-driven-order-system) (in development)
 
-- ⚡ Building scalable backend applications with **NestJS** & **TypeScript**
-- 🔐 Developing secure Authentication & Authorization systems
-- 🏦 Designing Wallet & Reward Platform architectures
-- 📦 Background job processing with **BullMQ** & **Redis**
-- 🐳 Containerizing applications using **Docker**
-- 🗄️ Working with **PostgreSQL** & **Prisma ORM**
+A NestJS monorepo for an order platform split into services: API gateway, auth, order, payment, inventory, and notification. Each service owns its database, and services communicate through Kafka events.
 
-### 🌱 Currently Learning
+I built it as a hands-on way to apply distributed-systems patterns: the transactional outbox (an order and its event are saved in one database transaction), idempotent consumers, retries with backoff, and dead letter queues.
 
-- 🧠 System Design
-- ☁️ Microservices Architecture
-- 📨 Event-Driven Systems
-- ⚡ Kafka
-- ☸️ Kubernetes
+Stack: NestJS, TypeScript, PostgreSQL, Prisma, Kafka, Redis, BullMQ, Docker
 
-### 🎯 My Goal
+### [QuotaPlane](https://github.com/parthadevs/quotaplane) (in development)
 
-To build reliable backend systems and SaaS products that can scale to millions of users while continuously improving my engineering skills.
+Shared quota and rate limiting infrastructure that lets multiple API keys draw from one organization's quota pool, with atomic quota deduction in Redis.
 
+Stack: NestJS, TypeScript, PostgreSQL, Prisma, Redis, BullMQ
 
+### [URL Shortener](https://github.com/parthadevs/url-shortener)
 
-## 🛠 Tech Stack
+A URL shortening service with link monetization. It uses Base62 short codes and multi-tier Redis caching to keep redirects fast.
 
-### 💻 Programming Languages
+Stack: TypeScript, Redis
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=ts,js" />
-</p>
+### [EarnAppz Web](https://github.com/parthadevs/earnappz-web)
 
-### ⚙️ Backend Development
+A real-time rewards platform with integrated offerwalls.
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=nodejs,nestjs,express" />
-</p>
+Stack: Next.js 14, Node.js, TypeScript, Socket.io, BullMQ, Redis, PostgreSQL
 
-### 🗄️ Database & ORM
+## Skills
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=postgres,prisma,mongodb" />
-</p>
+| | |
+| --- | --- |
+| Languages | TypeScript, JavaScript |
+| Backend | Node.js, NestJS, Express |
+| Frontend | Next.js, React, Tailwind CSS |
+| Databases | PostgreSQL, MySQL, MongoDB, Prisma |
+| Messaging and caching | Apache Kafka, BullMQ, Redis |
+| DevOps | Docker, GitHub Actions, AWS |
 
-### ⚡ Cache & Message Queue
+## Education and Research
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=redis" />
-</p>
+**BSc in Computer Science and Engineering**, Dhaka International University (2021 to 2025)
 
-<p align="left">
-  <img src="https://img.shields.io/badge/BullMQ-FF6A00?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
-</p>
+Two accepted papers:
 
-### ☁️ DevOps & Tools
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=docker,linux,git,github,postman,vscode" />
-</p>
-
-### 📚 Currently Learning
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=kafka,kubernetes,aws" />
-</p>
-
-
-# 🔥 Current Focus
-
-- 🚀 Scalable Backend Architecture
-- 🔐 Authentication & Authorization
-- ⚡ Queue Processing with BullMQ
-- 🏦 Wallet & Reward Platform
-- 📨 Offerwall Integration
-- 📊 System Design
-- ☁ Docker Deployment
-- ⚙ REST API Development
-- 🔄 Background Jobs
-- 🧩 Clean Architecture
-
-# 📊 GitHub Analytics
-
-<p align="center">
-
-<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=parthadevs&theme=tokyonight"/>
-
-</p>
-
-<p align="center">
-
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=parthadevs&theme=tokyonight"/>
-
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=parthadevs&theme=tokyonight"/>
-
-</p>
-
-<p align="center">
-
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=parthadevs&theme=tokyonight"/>
-
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=parthadevs&theme=tokyonight&utcOffset=6"/>
-
-</p>
-
-# 📈 Contribution Graph
-
-<p align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=parthadevs&theme=tokyo-night&hide_border=true"/>
-
-</p>
-
-# 💼 Featured Projects
-
-## 🚀 EarnApp
-
-Production-ready Reward Platform
-
-- Authentication
-- Wallet System
-- Offerwall Integration
-- BullMQ Queue
-- Redis Cache
-- Admin Dashboard
-
-
-## 🔐 Authentication System
-
-- JWT
-- Refresh Token
-- Role Based Access
-- Email Verification
-- Password Reset
-- Secure API
-
-
-## ⚡ NestJS Backend Boilerplate
-
-- NestJS
-- PostgreSQL
-- Prisma
-- Redis
-- BullMQ
-- Docker
-- Config Module
-- Logger
-- Validation
-
-
-# 📚 Currently Learning
-
-- ✅ Advanced NestJS
-- ✅ Distributed Systems
-- 🔄 Kafka
-- 🔄 Kubernetes
-- 🔄 Event Driven Architecture
-- 🔄 Domain Driven Design
-- 🔄 Microservices
-
-
-
-# 🎯 Goals For 2026
-
-- 🚀 Build Enterprise Backend Systems
-- ⭐ Contribute to Open Source
-- ☁ Learn Kubernetes
-- 📩 Learn Kafka
-- 🏗 Master System Design
-- 💼 Build SaaS Products
-
-
-# 📫 Connect With Me
-
-<p align="center">
-
-<a href="https://github.com/parthadevs">
-<img src="https://skillicons.dev/icons?i=github"/>
-</a>
-
-<a href="https://linkedin.com/in/parthadevs">
-<img src="https://skillicons.dev/icons?i=linkedin"/>
-</a>
-
-<a href="mailto:dev.parthasarker@gmail.com">
-<img src="https://skillicons.dev/icons?i=gmail"/>
-</a>
-
-</p>
-
-# ☕ Random Dev Quote
-
-<p align="center">
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"/>
-
-</p>
-
-
-# 💻 Visitor Counter
-
-<p align="center">
-
-<img src="https://komarev.com/ghpvc/?username=parthadevs&style=for-the-badge&color=blue"/>
-
-</p>
-
-
-<p align="center">
-
-### ⭐ If you like my work, don't forget to star my repositories!
-
-</p>
+- Bengali speech recognition framework using conformers, Taylor & Francis
+- Loan approval prediction, ICCIT 2025
